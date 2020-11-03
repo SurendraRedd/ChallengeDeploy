@@ -26,7 +26,7 @@ html_temp = """
     </div>
     </body>
 """
-st.set_page_config(
+st.beta_set_page_config(
         page_title = 'Votes',
         page_icon = "✌",
         layout = "centered",
