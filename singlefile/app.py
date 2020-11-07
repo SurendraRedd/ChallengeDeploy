@@ -3,6 +3,7 @@ import pandas as pd
 import base64
 from PIL import Image
 import json
+import urllib.request
 
 # DB Management
 # DB Functions
@@ -126,13 +127,12 @@ def main():
 
 
     if choice == "Home":
-        st.subheader("Problem Statement Brief:")
-        st.write("All adults have a right to vote, but this right is not being exercised due to thelimitation of voting in the registered constituency by being physically there.")
-
-        st.subheader("Proposed Solution:")
-        st.write("Refer the web application solution for the last vote challenges.")
-	img = Image.open(urllib.request.urlopen("https://github.com/SurendraRedd/ChallengeDeploy/raw/main/singlefile/Solution.png"))
-	st.image(img, width=300, caption="Simple Image")
+      st.subheader("Problem Statement Brief:")
+      st.write("All adults have a right to vote, but this right is not being exercised due to thelimitation of voting in the registered constituency by being physically there.")
+      st.subheader("Proposed Solution:")
+      st.write("Refer the web application solution for the last vote challenges.")
+      img = Image.open(urllib.request.urlopen("https://github.com/SurendraRedd/ChallengeDeploy/raw/main/singlefile/Solution.png"))
+      st.image(img, width=300, caption="Simple Image")
 
     elif choice == "Login":
       st.subheader("**Please Login to avail the vote!**")
