@@ -132,7 +132,7 @@ def main():
       st.subheader("Proposed Solution:")
       st.write("Refer the web application solution for the last vote challenges.")
       img = Image.open(urllib.request.urlopen("https://github.com/SurendraRedd/ChallengeDeploy/raw/main/singlefile/Solution.png"))
-      st.image(img, width=300, caption="Simple Image")
+      st.image(img, width=500, caption="Simple Image")
 
     elif choice == "Login":
       st.subheader("**Please Login to avail the vote!**")
